@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Panel, ControlLabel, Glyphicon } from 'react-bootstrap';
+import { Panel, ControlLabel, Glyphicon, Button } from 'react-bootstrap';
 import './Profile.css';
 
 class Profile extends Component {
@@ -26,7 +26,18 @@ class Profile extends Component {
               <ControlLabel><Glyphicon glyph="user" /> Nickname</ControlLabel>
               <h3>{profile.nickname}</h3>
             </div>
-            <pre>{JSON.stringify(profile, null, 2)}</pre>
+            <Button
+              bsStyle="primary"
+              className="btn-margin"
+            >
+              View Surveys
+            </Button>
+            <Button
+              bsStyle="primary"
+              className="btn-margin"
+            >
+              Create Survey
+            </Button>
           </Panel>
         </div>
       </div>
